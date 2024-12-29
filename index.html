@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <title>Calculadora</title>
+    <script type="text/javascript"  src="./calculator.js" charset="UTF-8"></script>
+  </head>
+  <body>
+    <video autoplay muted loop id="lobby">
+      <source src="./videos/derekbentley-season10-lobby-ambient.mp4" type="video/mp4">
+    </video>
+
+    <audio id="sonidoError" src="./audios/Perder.mp3"></audio>
+    <audio id="sonidoAcertar" src="./audios/Acertar.mp3"></audio>
+    
+
+    <div class="bienvenida" id="bienvenidaSection">
+      <h1>Calcula con Socratech</h1>
+      <button id="startButton">Comenzar</button>
+    </div>
+
+
+    <div class="container" id="calculatorSection" style="display: none;">
+      <div class="path">
+       <img src="./images/path.png" alt="Pathfinder" />
+    </div>
+      <div class="calculadora">
+        <input type="text" id="screen" />
+        <br>
+        <input type="button" value="1" onclick="addToScreen('1')" />
+        <input type="button" value="2" onclick="addToScreen('2')" />
+        <input type="button" value="3" onclick="addToScreen('3')" />
+        <input type="button" value="+" onclick="addToScreen('+')" />
+        <br>
+        <input type="button" value="4" onclick="addToScreen('4')" />
+        <input type="button" value="5" onclick="addToScreen('5')" />
+        <input type="button" value="6" onclick="addToScreen('6')" />
+        <input type="button" value="-" onclick="addToScreen('-')" />
+        <br>
+        <input type="button" value="7" onclick="addToScreen('7')" />
+        <input type="button" value="8" onclick="addToScreen('8')" />
+        <input type="button" value="9" onclick="addToScreen('9')" />
+        <input type="button" value="*" onclick="addToScreen('*')" />
+        <br>
+        <input type="button" value="=" onclick="calculate()" />
+        <input type="button" value="C" onclick="clearScreen()" />
+        <input type="button" value="0" onclick="addToScreen('0')" />
+        <input type="button" value="/" onclick="addToScreen('/')" />
+        <br>
+      </div>
+    </div>
+</body>
+</html>
+
